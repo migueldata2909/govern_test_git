@@ -22,6 +22,9 @@ models:
         description: "Product category."
       - name: price
         description: "Product price."
+        tests:
+          - not_null
+          - unique
 
   - name: fact_purchase_details
     description: "Purchase fact table enriched with customer and product details."

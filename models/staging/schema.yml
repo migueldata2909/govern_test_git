@@ -1,0 +1,50 @@
+version: 2
+
+models:
+  - name: dim_customers
+    description: "Customer dimension table."
+    columns:
+      - name: customer_id
+        description: "Unique customer identifier."
+      - name: customer_name
+        description: "Customer full name."
+      - name: email
+        description: "Customer email address."
+
+  - name: dim_products
+    description: "Product dimension table."
+    columns:
+      - name: product_id
+        description: "Unique product identifier."
+      - name: product_name
+        description: "Product name."
+      - name: category
+        description: "Product category."
+      - name: price
+        description: "Product price."
+
+  - name: fact_purchase_details
+    description: "Purchase fact table enriched with customer and product details."
+    columns:
+      - name: purchase_id
+        description: "Unique purchase identifier."
+      - name: purchase_date
+        description: "Date of the purchase."
+      - name: quantity
+        description: "Number of units purchased."
+      - name: customer_id
+        description: "Customer identifier."
+      - name: customer_name
+        description: "Customer full name."
+      - name: email
+        description: "Customer email address."
+      - name: product_id
+        description: "Product identifier."
+      - name: product_name
+        description: "Product name."
+      - name: category
+        description: "Product category."
+      - name: price
+        description: "Product price."
+      - name: purchase_amount
+        description: "Calculated purchase amount: quantity multiplied by product price."

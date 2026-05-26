@@ -14,7 +14,7 @@ select
 
     f.quantity * p.price as purchase_amount
 
-from {{ ref('dim_purchases') }} f
+from {{ ref('fact_purchases') }} f
 join {{ ref('dim_customers') }} c
     on f.customer_id = c.customer_id
 join {{ ref('dim_products') }} p

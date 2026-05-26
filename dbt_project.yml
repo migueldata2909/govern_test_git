@@ -37,6 +37,10 @@ clean-targets:         # directories to be removed by `dbt clean`
 
 models:
   govern_test:
+    +persist_docs:
+      relation: true
+      columns: true
+
     staging:
       +materialized: view
 

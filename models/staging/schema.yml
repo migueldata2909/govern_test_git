@@ -5,7 +5,7 @@ models:
     description: "Customer dimension table."
     columns:
       - name: customer_id
-        description: "Unique customer identifier."
+        description: "Unique customer identifier - description."
       - name: customer_name
         description: "Customer full name."
       - name: email

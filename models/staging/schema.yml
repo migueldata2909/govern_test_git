@@ -5,7 +5,7 @@ models:
     description: "Customer dimension table."
     columns:
       - name: customer_id
-        description: "Unique customer identifier."
+        description: "Unique customer identifier - description."
       - name: customer_name
         description: "Customer full name."
       - name: email
@@ -22,7 +22,9 @@ models:
         description: "Product category."
       - name: price
         description: "Product price."
-
+        tests:
+          - not_null
+          
   - name: fact_purchase_details
     description: "Purchase fact table enriched with customer and product details."
     columns:

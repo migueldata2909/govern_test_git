@@ -24,7 +24,21 @@ models:
         description: "Product price."
         tests:
           - not_null
-          
+
+  - name: fact_purchases
+    description: "Product dimension table."
+    columns:
+      - name: purchase_id
+        description: "Unique purchase identifier"
+      - name: customer_id
+        description: "Unique identifier per customer"
+      - name: product_id
+        description: "Unique product identifier."
+      - name: purchase_date
+        description: "Date of the purchase."
+      - name: quantity
+        description: "Quantity of items per purchase."
+
   - name: fact_purchase_details
     description: "Purchase fact table enriched with customer and product details."
     columns:

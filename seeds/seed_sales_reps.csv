@@ -1,0 +1,11 @@
+rep_id,name,email,phone,region,manager_id,hire_date,is_active,created_at
+REP001,Sophie Renard,sophie.renard@company.com,+33612345678,EMEA,REP010,2021-03-01,true,2021-03-01
+REP002,Marcus Webb,marcus.webb@company.com,+44712345678,EMEA,REP010,2021-05-15,true,2021-05-15
+REP003,Anna Hoffmann,anna.hoffmann@company.com,+49612345678,EMEA,REP010,2021-07-01,true,2021-07-01
+REP004,Carlos Vega,carlos.vega@company.com,+1212345678,AMER,REP010,2021-09-15,true,2021-09-15
+REP005,Priya Nair,priya.nair@company.com,+6512345678,APAC,REP010,2022-01-10,true,2022-01-10
+REP006,Julien Moreau,julien.moreau@company.com,+33698765432,EMEA,REP010,2022-03-01,true,2022-03-01
+REP007,Emma Clarke,emma.clarke@company.com,+44798765432,EMEA,REP010,2022-06-15,true,2022-06-15
+REP008,Diego Reyes,diego.reyes@company.com,+5211234567,AMER,REP010,2022-09-01,false,2022-09-01
+REP009,Li Wei,li.wei@company.com,+6598765432,APAC,REP010,2023-01-15,true,2023-01-15
+REP010,Marie Fontaine,marie.fontaine@company.com,+33687654321,EMEA,,2020-01-01,true,2020-01-01

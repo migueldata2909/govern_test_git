@@ -1,0 +1,31 @@
+product_id,sku,name,category,subcategory,unit_price,currency,is_active,created_at
+PROD001,SKU-LPT-001,ProBook Laptop 14,Electronics,Laptops,1299.00,EUR,true,2022-01-01
+PROD002,SKU-LPT-002,UltraBook Laptop 15,Electronics,Laptops,1899.00,EUR,true,2022-01-01
+PROD003,SKU-PHN-001,SmartPhone X12,Electronics,Phones,799.00,EUR,true,2022-01-01
+PROD004,SKU-PHN-002,SmartPhone X12 Pro,Electronics,Phones,1099.00,EUR,true,2022-01-01
+PROD005,SKU-TAB-001,TabPro 10,Electronics,Tablets,649.00,EUR,true,2022-02-01
+PROD006,SKU-TAB-002,TabPro 12,Electronics,Tablets,849.00,EUR,true,2022-02-01
+PROD007,SKU-MON-001,ViewClear 27 Monitor,Electronics,Monitors,449.00,EUR,true,2022-02-01
+PROD008,SKU-MON-002,ViewClear 32 Monitor,Electronics,Monitors,699.00,EUR,true,2022-03-01
+PROD009,SKU-KEY-001,MechType Keyboard,Accessories,Keyboards,129.00,EUR,true,2022-03-01
+PROD010,SKU-MOU-001,ErgoClick Mouse,Accessories,Mice,59.00,EUR,true,2022-03-01
+PROD011,SKU-HDP-001,SoundMax Headphones,Accessories,Audio,199.00,EUR,true,2022-04-01
+PROD012,SKU-WCM-001,ClearVision Webcam,Accessories,Cameras,89.00,EUR,true,2022-04-01
+PROD013,SKU-SFT-001,DataSuite Pro License,Software,Productivity,299.00,EUR,true,2022-04-01
+PROD014,SKU-SFT-002,SecureVault License,Software,Security,149.00,EUR,true,2022-05-01
+PROD015,SKU-SFT-003,AnalyticsPlus License,Software,Analytics,499.00,EUR,true,2022-05-01
+PROD016,SKU-SRV-001,CloudServer Basic,Cloud Services,Hosting,99.00,EUR,true,2022-05-01
+PROD017,SKU-SRV-002,CloudServer Pro,Cloud Services,Hosting,299.00,EUR,true,2022-06-01
+PROD018,SKU-SRV-003,CloudServer Enterprise,Cloud Services,Hosting,799.00,EUR,true,2022-06-01
+PROD019,SKU-BAG-001,ProCarry Laptop Bag,Accessories,Bags,79.00,EUR,true,2022-06-01
+PROD020,SKU-CBL-001,UltraCharge Cable Pack,Accessories,Cables,29.00,EUR,true,2022-07-01
+PROD021,SKU-HUB-001,ConnectAll USB Hub,Accessories,Hubs,49.00,EUR,true,2022-07-01
+PROD022,SKU-SSD-001,SpeedDrive SSD 1TB,Storage,SSD,189.00,EUR,true,2022-07-01
+PROD023,SKU-SSD-002,SpeedDrive SSD 2TB,Storage,SSD,349.00,EUR,true,2022-08-01
+PROD024,SKU-RAM-001,TurboRAM 16GB,Components,Memory,89.00,EUR,true,2022-08-01
+PROD025,SKU-RAM-002,TurboRAM 32GB,Components,Memory,169.00,EUR,true,2022-08-01
+PROD026,SKU-PRN-001,SwiftPrint Laser,Peripherals,Printers,399.00,EUR,true,2022-09-01
+PROD027,SKU-SCN-001,DocScan Pro,Peripherals,Scanners,249.00,EUR,true,2022-09-01
+PROD028,SKU-NAS-001,HomeNAS Storage,Storage,NAS,599.00,EUR,true,2022-10-01
+PROD029,SKU-RTR-001,FastLink Router,Networking,Routers,149.00,EUR,false,2022-10-01
+PROD030,SKU-SWT-001,NetSwitch 8Port,Networking,Switches,99.00,EUR,true,2022-11-01

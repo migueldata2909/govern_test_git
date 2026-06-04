@@ -1,0 +1,21 @@
+geo_id,country,region,subregion,timezone,currency_code
+GEO001,France,EMEA,Western Europe,Europe/Paris,EUR
+GEO002,Germany,EMEA,Western Europe,Europe/Berlin,EUR
+GEO003,United Kingdom,EMEA,Northern Europe,Europe/London,GBP
+GEO004,Switzerland,EMEA,Western Europe,Europe/Zurich,CHF
+GEO005,Spain,EMEA,Southern Europe,Europe/Madrid,EUR
+GEO006,Italy,EMEA,Southern Europe,Europe/Rome,EUR
+GEO007,Netherlands,EMEA,Western Europe,Europe/Amsterdam,EUR
+GEO008,United States,AMER,Northern America,America/New_York,USD
+GEO009,Canada,AMER,Northern America,America/Toronto,CAD
+GEO010,Brazil,AMER,South America,America/Sao_Paulo,BRL
+GEO011,Mexico,AMER,Central America,America/Mexico_City,MXN
+GEO012,Japan,APAC,Eastern Asia,Asia/Tokyo,JPY
+GEO013,Australia,APAC,Oceania,Australia/Sydney,AUD
+GEO014,Singapore,APAC,South-Eastern Asia,Asia/Singapore,SGD
+GEO015,India,APAC,Southern Asia,Asia/Kolkata,INR
+GEO016,UAE,MEA,Western Asia,Asia/Dubai,AED
+GEO017,South Africa,MEA,Sub-Saharan Africa,Africa/Johannesburg,ZAR
+GEO018,Poland,EMEA,Eastern Europe,Europe/Warsaw,PLN
+GEO019,Sweden,EMEA,Northern Europe,Europe/Stockholm,SEK
+GEO020,Belgium,EMEA,Western Europe,Europe/Brussels,EUR

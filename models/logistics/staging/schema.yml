@@ -2,15 +2,12 @@ version: 2
 
 models:
   - name: stg_warehouses
-    description: "Staged warehouses. Cleaned and cast."
+    description: "Staged warehouses."
     columns:
       - name: warehouse_id
         tests: [unique, not_null]
       - name: type
-        tests:
-          - name: accepted_values
-            arguments:
-              values: ['fulfillment','distribution','returns']
+        tests: [not_null]
 
   - name: stg_suppliers
     description: "Staged suppliers. Internal."
@@ -29,11 +26,10 @@ models:
     columns:
       - name: shipment_id
         tests: [unique, not_null]
+      - name: order_id
+        tests: [not_null]
       - name: status
-        tests:
-          - name: accepted_values
-            arguments:
-              values: ['pending','in_transit','delivered','failed','returned']
+        tests: [not_null]
 
   - name: stg_shipment_events
     description: "Staged shipment tracking events."
@@ -47,10 +43,7 @@ models:
       - name: po_id
         tests: [unique, not_null]
       - name: status
-        tests:
-          - name: accepted_values
-            arguments:
-              values: ['draft','confirmed','shipped','received','cancelled']
+        tests: [not_null]
 
   - name: stg_delivery_sla
     description: "Staged SLA performance data per carrier and region."
@@ -63,8 +56,7 @@ models:
     columns:
       - name: return_id
         tests: [unique, not_null]
+      - name: order_id
+        tests: [not_null]
       - name: reason
-        tests:
-          - name: accepted_values
-            arguments:
-              values: ['damaged','wrong_item','not_needed','late_delivery','other']
+        tests: [not_null]

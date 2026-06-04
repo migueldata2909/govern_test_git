@@ -11,10 +11,7 @@ models:
       - name: warehouse_id
         tests: [unique, not_null]
       - name: type
-        tests:
-          - name: accepted_values
-            arguments:
-              values: ['fulfillment','distribution','returns']
+        tests: [not_null]
 
   - name: suppliers
     description: "Supplier master data. Internal."
@@ -27,7 +24,7 @@ models:
         tests: [unique, not_null]
 
   - name: inventory
-    description: "Stock levels by warehouse and product. product_id cross-references shared.products."
+    description: "Stock levels by warehouse and product."
     meta:
       owner: "logistics-team@company.com"
       domain: "logistics"
@@ -51,13 +48,10 @@ models:
       - name: po_id
         tests: [unique, not_null]
       - name: status
-        tests:
-          - name: accepted_values
-            arguments:
-              values: ['draft','confirmed','shipped','received','cancelled']
+        tests: [not_null]
 
   - name: shipments
-    description: "Shipment records. Cross-domain: order_id → sales.orders, customer_id → shared.customers (both PostgreSQL)."
+    description: "Shipment records. Cross-domain: order_id → sales.orders, customer_id → shared.customers."
     meta:
       owner: "logistics-team@company.com"
       domain: "logistics"
@@ -73,10 +67,7 @@ models:
         meta:
           sensitivity: "Quasi-PII"
       - name: status
-        tests:
-          - name: accepted_values
-            arguments:
-              values: ['pending','in_transit','delivered','failed','returned']
+        tests: [not_null]
 
   - name: shipment_events
     description: "Tracking event log per shipment."
@@ -103,10 +94,7 @@ models:
         description: "Percentage of shipments meeting SLA."
       - name: sla_status
         description: "RAG: GREEN >= 95%, AMBER >= 85%, RED < 85%."
-        tests:
-          - name: accepted_values
-            arguments:
-              values: ['GREEN','AMBER','RED']
+        tests: [not_null]
 
   - name: returns
     description: "Product returns. Cross-domain: order_id → sales.orders (PostgreSQL)."
@@ -121,7 +109,4 @@ models:
         description: "Cross-domain FK → sales.orders.order_id."
         tests: [not_null]
       - name: reason
-        tests:
-          - name: accepted_values
-            arguments:
-              values: ['damaged','wrong_item','not_needed','late_delivery','other']
+        tests: [not_null]

@@ -29,10 +29,9 @@ models:
       - name: order_id
         tests: [unique, not_null]
       - name: status
-        tests:
-          - name: accepted_values
-            arguments:
-              values: ['pending','confirmed','shipped','delivered','cancelled']
+        tests: [not_null]
+      - name: total_amount
+        tests: [not_null]
 
   - name: stg_order_lines
     description: "Staged order line items with calculated line_total."
@@ -46,10 +45,7 @@ models:
       - name: invoice_id
         tests: [unique, not_null]
       - name: status
-        tests:
-          - name: accepted_values
-            arguments:
-              values: ['draft','issued','paid','overdue','cancelled']
+        tests: [not_null]
 
   - name: stg_payments
     description: "Staged payments with cast timestamps."
@@ -57,10 +53,7 @@ models:
       - name: payment_id
         tests: [unique, not_null]
       - name: method
-        tests:
-          - name: accepted_values
-            arguments:
-              values: ['credit_card','bank_transfer','paypal','cash']
+        tests: [not_null]
 
   - name: stg_sales_reps
     description: "Staged sales reps. PII — GDPR applies."

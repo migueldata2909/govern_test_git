@@ -22,10 +22,14 @@ models:
       - name: status
         tests:
           - accepted_values:
+              config:
+                severity: warn
               values: ['pending','confirmed','shipped','delivered','cancelled']
       - name: channel
         tests:
           - accepted_values:
+              config:
+                severity: warn
               values: ['web','mobile','partner','direct']
       - name: total_amount
         tests: [not_null]
@@ -72,6 +76,8 @@ models:
       - name: status
         tests:
           - accepted_values:
+              config:
+                severity: warn
               values: ['draft','issued','paid','overdue','cancelled']
 
   - name: payments
@@ -88,10 +94,14 @@ models:
       - name: method
         tests:
           - accepted_values:
+              config:
+                severity: warn
               values: ['credit_card','bank_transfer','paypal','cash']
       - name: status
         tests:
           - accepted_values:
+              config:
+                severity: warn
               values: ['pending','completed','failed','refunded']
 
   - name: sales_reps

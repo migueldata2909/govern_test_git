@@ -1,21 +1,21 @@
 name: 'govern_test'
 version: '1.0.0'
 config-version: 2
-
+ 
 profile: 'default'
-
+ 
 model-paths: ["models"]
 analysis-paths: ["analyses"]
 test-paths: ["tests"]
 seed-paths: ["seeds"]
 macro-paths: ["macros"]
 snapshot-paths: ["snapshots"]
-
+ 
 target-path: "target"
 clean-targets:
   - "target"
   - "dbt_packages"
-
+ 
 # -------------------------
 # SEEDS
 # -------------------------
@@ -25,7 +25,7 @@ seeds:
       +column_types:
         phone: varchar(20)
         manager_id: varchar(10)
-
+ 
 # -------------------------
 # MODELS
 # -------------------------
@@ -34,17 +34,17 @@ models:
     +persist_docs:
       relation: true
       columns: true
-
+ 
     # EXISTING — unchanged
     marts:
       +materialized: table
-
+ 
     # NEW — Shared domain
     shared:
       +materialized: table
       +schema: shared
       +tags: ["shared", "cross-domain"]
-
+ 
     # NEW — Sales domain
     sales:
       +tags: ["sales"]
@@ -56,9 +56,10 @@ models:
         +materialized: table
         +schema: sales
         +tags: ["sales", "mart"]
-
-    # NEW — Logistics domain (Snowflake)
+ 
+    # NEW — Logistics domain (Snowflake only)
     logistics:
+      +enabled: "{{ (target.type == 'snowflake') | as_bool }}"
       +database: LOGISTICS_DB
       +schema: LOGISTICS
       +tags: ["logistics"]

@@ -1,0 +1,11 @@
+warehouse_id,name,geo_id,address,capacity_units,type,is_active,created_at
+WH001,Paris Central,GEO001,15 Rue de la Logistique Paris,50000,fulfillment,true,2022-01-01
+WH002,Berlin Hub,GEO002,42 Lagerstrasse Berlin,75000,distribution,true,2022-01-01
+WH003,London East,GEO003,8 Warehouse Road London,60000,fulfillment,true,2022-02-01
+WH004,Zurich Depot,GEO004,3 Industrieweg Zurich,25000,fulfillment,true,2022-02-01
+WH005,Amsterdam Port,GEO007,22 Havenstraat Amsterdam,90000,distribution,true,2022-03-01
+WH006,New York East,GEO008,100 Logistics Ave New York,80000,distribution,true,2022-03-01
+WH007,Singapore Hub,GEO014,5 Logistics Park Singapore,70000,distribution,true,2022-04-01
+WH008,Sydney South,GEO013,33 Warehouse St Sydney,40000,fulfillment,true,2022-04-01
+WH009,Madrid Depot,GEO005,7 Calle Almacen Madrid,30000,fulfillment,true,2022-05-01
+WH010,Milan North,GEO006,12 Via Magazzino Milan,35000,returns,true,2022-05-01

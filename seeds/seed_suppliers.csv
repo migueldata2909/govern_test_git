@@ -1,0 +1,11 @@
+supplier_id,name,country,contact_email,lead_time_days,rating,is_active,created_at
+SUP001,TechSupply GmbH,Germany,orders@techsupply.de,14,4.5,true,2022-01-01
+SUP002,ElectroSource Ltd,United Kingdom,supply@electrosource.co.uk,10,4.2,true,2022-01-01
+SUP003,ComponentsPlus SA,France,contact@componentsplus.fr,7,4.8,true,2022-02-01
+SUP004,AsiaElectronics Pte,Singapore,sales@asiaelectronics.sg,21,4.0,true,2022-02-01
+SUP005,EuroDistrib NV,Netherlands,orders@eurodistrib.nl,5,4.6,true,2022-03-01
+SUP006,GlobalParts Inc,United States,supply@globalparts.com,14,3.9,true,2022-03-01
+SUP007,SwissComponents AG,Switzerland,orders@swisscomponents.ch,7,4.9,true,2022-04-01
+SUP008,IberiaSupply SL,Spain,ventas@iberiasupply.es,10,4.1,true,2022-04-01
+SUP009,NordicTech AB,Sweden,orders@nordictech.se,12,4.4,true,2022-05-01
+SUP010,AusParts Pty,Australia,supply@ausparts.com.au,18,3.8,false,2022-05-01

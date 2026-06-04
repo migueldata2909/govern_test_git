@@ -1,0 +1,74 @@
+version: 2
+
+models:
+  - name: stg_warehouses
+    description: "Staged warehouses. Cleaned and cast."
+    columns:
+      - name: warehouse_id
+        tests: [unique, not_null]
+      - name: type
+        tests:
+          - accepted_values:
+              config:
+                severity: warn
+              values: ['fulfillment','distribution','returns']
+
+  - name: stg_suppliers
+    description: "Staged suppliers. Internal."
+    columns:
+      - name: supplier_id
+        tests: [unique, not_null]
+
+  - name: stg_inventory
+    description: "Staged inventory levels per warehouse and product."
+    columns:
+      - name: inventory_id
+        tests: [unique, not_null]
+
+  - name: stg_shipments
+    description: "Staged shipments. Cross-domain: order_id and customer_id reference PostgreSQL."
+    columns:
+      - name: shipment_id
+        tests: [unique, not_null]
+      - name: status
+        tests:
+          - accepted_values:
+              config:
+                severity: warn
+              values: ['pending','in_transit','delivered','failed','returned']
+
+  - name: stg_shipment_events
+    description: "Staged shipment tracking events."
+    columns:
+      - name: event_id
+        tests: [unique, not_null]
+
+  - name: stg_purchase_orders
+    description: "Staged purchase orders to suppliers."
+    columns:
+      - name: po_id
+        tests: [unique, not_null]
+      - name: status
+        tests:
+          - accepted_values:
+              config:
+                severity: warn
+              values: ['draft','confirmed','shipped','received','cancelled']
+
+  - name: stg_delivery_sla
+    description: "Staged SLA performance data per carrier and region."
+    columns:
+      - name: sla_id
+        tests: [unique, not_null]
+
+  - name: stg_returns
+    description: "Staged product returns. Cross-domain: order_id references PostgreSQL."
+    columns:
+      - name: return_id
+        tests: [unique, not_null]
+      - name: reason
+        tests:
+          - accepted_values:
+              config:
+                severity: warn
+              values: ['damaged','wrong_item','not_needed','late_delivery','other']

@@ -10,10 +10,8 @@ models:
       tier: "Tier2"
     columns:
       - name: order_id
-        description: "Unique order identifier. Also used in Logistics domain."
         tests: [unique, not_null]
       - name: customer_id
-        description: "FK to shared.customers."
         tests:
           - not_null
           - relationships:
@@ -21,15 +19,13 @@ models:
               field: customer_id
       - name: status
         tests:
-          - accepted_values:
-              config:
-                severity: warn
+          - name: accepted_values
+            arguments:
               values: ['pending','confirmed','shipped','delivered','cancelled']
       - name: channel
         tests:
-          - accepted_values:
-              config:
-                severity: warn
+          - name: accepted_values
+            arguments:
               values: ['web','mobile','partner','direct']
       - name: total_amount
         tests: [not_null]
@@ -75,9 +71,8 @@ models:
               field: order_id
       - name: status
         tests:
-          - accepted_values:
-              config:
-                severity: warn
+          - name: accepted_values
+            arguments:
               values: ['draft','issued','paid','overdue','cancelled']
 
   - name: payments
@@ -93,15 +88,13 @@ models:
         tests: [unique, not_null]
       - name: method
         tests:
-          - accepted_values:
-              config:
-                severity: warn
+          - name: accepted_values
+            arguments:
               values: ['credit_card','bank_transfer','paypal','cash']
       - name: status
         tests:
-          - accepted_values:
-              config:
-                severity: warn
+          - name: accepted_values
+            arguments:
               values: ['pending','completed','failed','refunded']
 
   - name: sales_reps

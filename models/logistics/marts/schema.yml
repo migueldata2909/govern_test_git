@@ -12,9 +12,8 @@ models:
         tests: [unique, not_null]
       - name: type
         tests:
-          - accepted_values:
-              config:
-                severity: warn
+          - name: accepted_values
+            arguments:
               values: ['fulfillment','distribution','returns']
 
   - name: suppliers
@@ -53,9 +52,8 @@ models:
         tests: [unique, not_null]
       - name: status
         tests:
-          - accepted_values:
-              config:
-                severity: warn
+          - name: accepted_values
+            arguments:
               values: ['draft','confirmed','shipped','received','cancelled']
 
   - name: shipments
@@ -76,9 +74,8 @@ models:
           sensitivity: "Quasi-PII"
       - name: status
         tests:
-          - accepted_values:
-              config:
-                severity: warn
+          - name: accepted_values
+            arguments:
               values: ['pending','in_transit','delivered','failed','returned']
 
   - name: shipment_events
@@ -107,9 +104,8 @@ models:
       - name: sla_status
         description: "RAG: GREEN >= 95%, AMBER >= 85%, RED < 85%."
         tests:
-          - accepted_values:
-              config:
-                severity: warn
+          - name: accepted_values
+            arguments:
               values: ['GREEN','AMBER','RED']
 
   - name: returns
@@ -126,7 +122,6 @@ models:
         tests: [not_null]
       - name: reason
         tests:
-          - accepted_values:
-              config:
-                severity: warn
+          - name: accepted_values
+            arguments:
               values: ['damaged','wrong_item','not_needed','late_delivery','other']

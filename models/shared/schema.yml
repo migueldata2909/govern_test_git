@@ -3,37 +3,23 @@ version: 2
 models:
   - name: customers
     description: "Master customer table. Cross-domain — referenced by both Sales and Logistics. PII — GDPR applies."
-    meta:
-      owner: "data-governance@company.com"
-      domain: "shared"
-      sensitivity: "PII"
-      compliance: ["GDPR"]
     columns:
       - name: customer_id
         description: "Unique customer identifier. Primary key."
         tests: [unique, not_null]
       - name: customer_name
         description: "Full name. PII — direct identifier."
-        meta: {sensitivity: "PII", compliance: ["GDPR"]}
       - name: customer_email
         description: "Email address. PII — direct identifier. GDPR Restricted."
-        meta: {sensitivity: "PII", compliance: ["GDPR","Restricted"]}
         tests: [unique, not_null]
       - name: country
         description: "Customer country. Quasi-PII."
-        meta: {sensitivity: "Quasi-PII"}
       - name: segment
         description: "Customer segment (Enterprise, SMB, Consumer)."
-        tests:
-          - accepted_values:
-              values: ['Enterprise','SMB','Consumer']
+        tests: [not_null]
 
   - name: products
     description: "Master product catalog. Public — no PII. Shared across domains."
-    meta:
-      owner: "data-governance@company.com"
-      domain: "shared"
-      sensitivity: "Public"
     columns:
       - name: product_id
         description: "Unique product identifier."
@@ -47,11 +33,10 @@ models:
 
   - name: geography
     description: "Geographic reference table. Public. Used by Logistics for warehouse location."
-    meta:
-      owner: "data-governance@company.com"
-      domain: "shared"
-      sensitivity: "Public"
     columns:
       - name: geo_id
         description: "Unique geography identifier."
         tests: [unique, not_null]
+      - name: country
+        description: "Country name."
+        tests: [not_null]

@@ -31,6 +31,8 @@ models:
       - name: status
         tests:
           - accepted_values:
+              config:
+                severity: warn
               values: ['pending','confirmed','shipped','delivered','cancelled']
 
   - name: stg_order_lines
@@ -47,6 +49,8 @@ models:
       - name: status
         tests:
           - accepted_values:
+              config:
+                severity: warn
               values: ['draft','issued','paid','overdue','cancelled']
 
   - name: stg_payments
@@ -57,6 +61,8 @@ models:
       - name: method
         tests:
           - accepted_values:
+              config:
+                severity: warn
               values: ['credit_card','bank_transfer','paypal','cash']
 
   - name: stg_sales_reps

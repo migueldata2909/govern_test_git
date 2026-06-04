@@ -1,0 +1,51 @@
+customer_id,name,email,country,region,segment,created_at,updated_at
+CUST001,Alice Martin,alice.martin@example.com,France,EMEA,Enterprise,2022-01-15,2023-06-01
+CUST002,Bruno Schmidt,bruno.schmidt@example.com,Germany,EMEA,SMB,2022-02-10,2023-07-15
+CUST003,Clara Johnson,clara.johnson@example.com,United Kingdom,EMEA,Consumer,2022-03-05,2023-08-20
+CUST004,David Rossi,david.rossi@example.com,Italy,EMEA,Enterprise,2022-03-20,2023-05-10
+CUST005,Elena Garcia,elena.garcia@example.com,Spain,EMEA,SMB,2022-04-12,2023-09-01
+CUST006,Frank Muller,frank.muller@example.com,Switzerland,EMEA,Enterprise,2022-04-25,2023-10-15
+CUST007,Grace Dubois,grace.dubois@example.com,France,EMEA,Consumer,2022-05-08,2023-11-20
+CUST008,Hugo Janssen,hugo.janssen@example.com,Netherlands,EMEA,SMB,2022-05-22,2023-12-01
+CUST009,Isla Thompson,isla.thompson@example.com,United Kingdom,EMEA,Enterprise,2022-06-14,2024-01-10
+CUST010,James Wilson,james.wilson@example.com,United States,AMER,Enterprise,2022-06-28,2024-02-05
+CUST011,Karen Lee,karen.lee@example.com,United States,AMER,SMB,2022-07-11,2024-03-15
+CUST012,Luca Ferrari,luca.ferrari@example.com,Italy,EMEA,Consumer,2022-07-25,2024-04-20
+CUST013,Maria Santos,maria.santos@example.com,Brazil,AMER,SMB,2022-08-09,2024-05-01
+CUST014,Nils Eriksson,nils.eriksson@example.com,Sweden,EMEA,Enterprise,2022-08-23,2024-06-10
+CUST015,Olivia Brown,olivia.brown@example.com,Canada,AMER,Consumer,2022-09-06,2024-07-15
+CUST016,Pierre Dupont,pierre.dupont@example.com,France,EMEA,Enterprise,2022-09-20,2024-08-20
+CUST017,Qian Zhang,qian.zhang@example.com,Singapore,APAC,SMB,2022-10-04,2024-09-01
+CUST018,Rafael Morales,rafael.morales@example.com,Mexico,AMER,Consumer,2022-10-18,2024-10-10
+CUST019,Sara Kowalski,sara.kowalski@example.com,Poland,EMEA,SMB,2022-11-01,2024-11-15
+CUST020,Thomas Becker,thomas.becker@example.com,Germany,EMEA,Enterprise,2022-11-15,2024-12-01
+CUST021,Uma Patel,uma.patel@example.com,India,APAC,SMB,2022-11-29,2024-12-15
+CUST022,Victor Blanc,victor.blanc@example.com,Belgium,EMEA,Consumer,2022-12-13,2025-01-10
+CUST023,Wendy Chang,wendy.chang@example.com,Australia,APAC,Enterprise,2023-01-10,2025-02-05
+CUST024,Xavier Noel,xavier.noel@example.com,France,EMEA,SMB,2023-01-24,2025-03-15
+CUST025,Yuki Tanaka,yuki.tanaka@example.com,Japan,APAC,Enterprise,2023-02-07,2025-04-20
+CUST026,Zoe Adams,zoe.adams@example.com,United Kingdom,EMEA,Consumer,2023-02-21,2025-05-01
+CUST027,Aaron Müller,aaron.muller@example.com,Germany,EMEA,SMB,2023-03-07,2025-06-10
+CUST028,Beatriz Lima,beatriz.lima@example.com,Brazil,AMER,Enterprise,2023-03-21,2025-07-15
+CUST029,Carlos Ruiz,carlos.ruiz@example.com,Spain,EMEA,Consumer,2023-04-04,2025-08-20
+CUST030,Diana Prince,diana.prince@example.com,United States,AMER,Enterprise,2023-04-18,2025-09-01
+CUST031,Ethan Moore,ethan.moore@example.com,Canada,AMER,SMB,2023-05-02,2025-10-10
+CUST032,Fatima Al-Hassan,fatima.alhassan@example.com,UAE,MEA,Enterprise,2023-05-16,2025-11-15
+CUST033,George Taylor,george.taylor@example.com,Australia,APAC,Consumer,2023-05-30,2025-12-01
+CUST034,Hana Yamamoto,hana.yamamoto@example.com,Japan,APAC,SMB,2023-06-13,2026-01-10
+CUST035,Ivan Petrov,ivan.petrov@example.com,Poland,EMEA,Enterprise,2023-06-27,2026-02-05
+CUST036,Julia Roux,julia.roux@example.com,France,EMEA,Consumer,2023-07-11,2026-03-15
+CUST037,Kevin O'Brien,kevin.obrien@example.com,United Kingdom,EMEA,SMB,2023-07-25,2026-04-20
+CUST038,Laura Meier,laura.meier@example.com,Switzerland,EMEA,Enterprise,2023-08-08,2026-05-01
+CUST039,Marco Esposito,marco.esposito@example.com,Italy,EMEA,Consumer,2023-08-22,2026-06-10
+CUST040,Nina Johansson,nina.johansson@example.com,Sweden,EMEA,SMB,2023-09-05,2026-07-15
+CUST041,Omar Khalil,omar.khalil@example.com,UAE,MEA,Enterprise,2023-09-19,2026-08-20
+CUST042,Paula Fernandez,paula.fernandez@example.com,Spain,EMEA,Consumer,2023-10-03,2026-09-01
+CUST043,Raj Sharma,raj.sharma@example.com,India,APAC,SMB,2023-10-17,2026-10-10
+CUST044,Sophie Bernard,sophie.bernard@example.com,France,EMEA,Enterprise,2023-10-31,2026-11-15
+CUST045,Tomas Novak,tomas.novak@example.com,Poland,EMEA,Consumer,2023-11-14,2026-12-01
+CUST046,Ursula Klein,ursula.klein@example.com,Germany,EMEA,SMB,2023-11-28,2026-12-15
+CUST047,Vincent Leblanc,vincent.leblanc@example.com,Belgium,EMEA,Enterprise,2023-12-12,2027-01-10
+CUST048,Wanda Kowalczyk,wanda.kowalczyk@example.com,Poland,EMEA,Consumer,2023-12-26,2027-02-05
+CUST049,Xander Visser,xander.visser@example.com,Netherlands,EMEA,SMB,2024-01-09,2027-03-15
+CUST050,Yasmine Benali,yasmine.benali@example.com,France,EMEA,Enterprise,2024-01-23,2027-04-20

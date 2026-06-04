@@ -1,0 +1,78 @@
+version: 2
+
+models:
+  - name: stg_customers
+    description: "Staged customers from seed. Cleaned and renamed. PII — GDPR applies."
+    columns:
+      - name: customer_id
+        tests: [unique, not_null]
+      - name: customer_email
+        tests: [unique, not_null]
+
+  - name: stg_products
+    description: "Staged products from seed. Public — no PII."
+    columns:
+      - name: product_id
+        tests: [unique, not_null]
+      - name: sku
+        tests: [unique, not_null]
+
+  - name: stg_geography
+    description: "Staged geography reference data."
+    columns:
+      - name: geo_id
+        tests: [unique, not_null]
+
+  - name: stg_orders
+    description: "Staged orders. Cast and validated."
+    columns:
+      - name: order_id
+        tests: [unique, not_null]
+      - name: status
+        tests:
+          - accepted_values:
+              values: ['pending','confirmed','shipped','delivered','cancelled']
+
+  - name: stg_order_lines
+    description: "Staged order line items with calculated line_total."
+    columns:
+      - name: line_id
+        tests: [unique, not_null]
+
+  - name: stg_invoices
+    description: "Staged invoices with cast dates and amounts."
+    columns:
+      - name: invoice_id
+        tests: [unique, not_null]
+      - name: status
+        tests:
+          - accepted_values:
+              values: ['draft','issued','paid','overdue','cancelled']
+
+  - name: stg_payments
+    description: "Staged payments with cast timestamps."
+    columns:
+      - name: payment_id
+        tests: [unique, not_null]
+      - name: method
+        tests:
+          - accepted_values:
+              values: ['credit_card','bank_transfer','paypal','cash']
+
+  - name: stg_sales_reps
+    description: "Staged sales reps. PII — GDPR applies."
+    columns:
+      - name: rep_id
+        tests: [unique, not_null]
+
+  - name: stg_promotions
+    description: "Staged promotions and discounts."
+    columns:
+      - name: promo_id
+        tests: [unique, not_null]
+
+  - name: stg_sales_targets
+    description: "Staged quarterly sales targets per rep."
+    columns:
+      - name: target_id
+        tests: [unique, not_null]

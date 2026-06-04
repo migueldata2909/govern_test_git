@@ -1,0 +1,147 @@
+version: 2
+
+models:
+  - name: orders
+    description: "Core sales transaction table. Internal. Cross-domain key: order_id referenced by logistics.shipments and logistics.returns."
+    meta:
+      owner: "sales-team@company.com"
+      domain: "sales"
+      sensitivity: "Internal"
+      tier: "Tier2"
+    columns:
+      - name: order_id
+        description: "Unique order identifier. Also used in Logistics domain."
+        tests: [unique, not_null]
+      - name: customer_id
+        description: "FK to shared.customers."
+        tests:
+          - not_null
+          - relationships:
+              to: ref('customers')
+              field: customer_id
+      - name: status
+        tests:
+          - accepted_values:
+              values: ['pending','confirmed','shipped','delivered','cancelled']
+      - name: channel
+        tests:
+          - accepted_values:
+              values: ['web','mobile','partner','direct']
+      - name: total_amount
+        tests: [not_null]
+
+  - name: order_lines
+    description: "Line items per order. Links orders to products."
+    meta:
+      owner: "sales-team@company.com"
+      domain: "sales"
+      sensitivity: "Internal"
+    columns:
+      - name: line_id
+        tests: [unique, not_null]
+      - name: order_id
+        tests:
+          - not_null
+          - relationships:
+              to: ref('orders')
+              field: order_id
+      - name: product_id
+        tests:
+          - not_null
+          - relationships:
+              to: ref('products')
+              field: product_id
+
+  - name: invoices
+    description: "Invoice records. Financial — Restricted. Tier1."
+    meta:
+      owner: "finance@company.com"
+      domain: "sales"
+      sensitivity: "Financial"
+      compliance: ["Restricted"]
+      tier: "Tier1"
+    columns:
+      - name: invoice_id
+        tests: [unique, not_null]
+      - name: order_id
+        tests:
+          - not_null
+          - relationships:
+              to: ref('orders')
+              field: order_id
+      - name: status
+        tests:
+          - accepted_values:
+              values: ['draft','issued','paid','overdue','cancelled']
+
+  - name: payments
+    description: "Payment transactions. Financial, PCI scope. Restricted. Tier1."
+    meta:
+      owner: "finance@company.com"
+      domain: "sales"
+      sensitivity: "Financial"
+      compliance: ["PCI","Restricted"]
+      tier: "Tier1"
+    columns:
+      - name: payment_id
+        tests: [unique, not_null]
+      - name: method
+        tests:
+          - accepted_values:
+              values: ['credit_card','bank_transfer','paypal','cash']
+      - name: status
+        tests:
+          - accepted_values:
+              values: ['pending','completed','failed','refunded']
+
+  - name: sales_reps
+    description: "Internal sales team. PII — GDPR applies."
+    meta:
+      owner: "hr@company.com"
+      domain: "sales"
+      sensitivity: "PII"
+      compliance: ["GDPR"]
+    columns:
+      - name: rep_id
+        tests: [unique, not_null]
+      - name: rep_email
+        tests: [unique, not_null]
+
+  - name: promotions
+    description: "Product promotions and discounts. Internal."
+    meta:
+      owner: "sales-team@company.com"
+      domain: "sales"
+      sensitivity: "Internal"
+    columns:
+      - name: promo_id
+        tests: [unique, not_null]
+
+  - name: sales_targets
+    description: "Quarterly sales targets per rep. KPI source. Internal."
+    meta:
+      owner: "sales-team@company.com"
+      domain: "sales"
+      sensitivity: "Internal"
+      tags: ["kpi"]
+    columns:
+      - name: target_id
+        tests: [unique, not_null]
+      - name: achievement_pct
+        description: "Calculated: achieved / target × 100."
+
+  - name: revenue_daily
+    description: "Daily revenue aggregation by channel, country, segment. KPI mart — no PII. Certified Tier1."
+    meta:
+      owner: "sales-team@company.com"
+      domain: "sales"
+      sensitivity: "Internal"
+      tags: ["kpi","certified"]
+      tier: "Tier1"
+    columns:
+      - name: date
+        tests: [not_null]
+      - name: total_revenue
+        tests: [not_null]
+      - name: order_count
+        tests: [not_null]

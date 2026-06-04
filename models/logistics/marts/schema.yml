@@ -3,10 +3,6 @@ version: 2
 models:
   - name: warehouses
     description: "Warehouse locations. geo_id cross-references shared.geography (PostgreSQL)."
-    meta:
-      owner: "logistics-team@company.com"
-      domain: "logistics"
-      sensitivity: "Internal"
     columns:
       - name: warehouse_id
         tests: [unique, not_null]
@@ -15,21 +11,12 @@ models:
 
   - name: suppliers
     description: "Supplier master data. Internal."
-    meta:
-      owner: "logistics-team@company.com"
-      domain: "logistics"
-      sensitivity: "Internal"
     columns:
       - name: supplier_id
         tests: [unique, not_null]
 
   - name: inventory
-    description: "Stock levels by warehouse and product."
-    meta:
-      owner: "logistics-team@company.com"
-      domain: "logistics"
-      sensitivity: "Internal"
-      tier: "Tier2"
+    description: "Stock levels by warehouse and product. product_id cross-references shared.products."
     columns:
       - name: inventory_id
         tests: [unique, not_null]
@@ -40,10 +27,6 @@ models:
 
   - name: purchase_orders
     description: "Procurement orders to suppliers."
-    meta:
-      owner: "logistics-team@company.com"
-      domain: "logistics"
-      sensitivity: "Internal"
     columns:
       - name: po_id
         tests: [unique, not_null]
@@ -51,62 +34,45 @@ models:
         tests: [not_null]
 
   - name: shipments
-    description: "Shipment records. Cross-domain: order_id → sales.orders, customer_id → shared.customers."
-    meta:
-      owner: "logistics-team@company.com"
-      domain: "logistics"
-      sensitivity: "Internal"
+    description: "Shipment records. Cross-domain: order_id references sales.orders, customer_id references shared.customers (both PostgreSQL)."
     columns:
       - name: shipment_id
         tests: [unique, not_null]
       - name: order_id
-        description: "Cross-domain FK → sales.orders."
+        description: "Cross-domain FK referencing sales.orders.order_id."
         tests: [not_null]
       - name: customer_id
-        description: "Quasi-PII: links to shared.customers."
-        meta:
-          sensitivity: "Quasi-PII"
+        description: "Quasi-PII: links to shared.customers. Does not store personal data directly."
+        tests: [not_null]
       - name: status
         tests: [not_null]
 
   - name: shipment_events
-    description: "Tracking event log per shipment."
-    meta:
-      owner: "logistics-team@company.com"
-      domain: "logistics"
-      sensitivity: "Internal"
+    description: "Tracking event log per shipment. Append-only history."
     columns:
       - name: event_id
         tests: [unique, not_null]
+      - name: shipment_id
+        tests: [not_null]
 
   - name: delivery_sla
-    description: "SLA performance by carrier and region. KPI — no PII. Certified Tier1."
-    meta:
-      owner: "logistics-team@company.com"
-      domain: "logistics"
-      sensitivity: "Public"
-      tags: ["kpi","certified"]
-      tier: "Tier1"
+    description: "Aggregated SLA performance by carrier and region. KPI source — no PII. Certified Tier1."
     columns:
       - name: sla_id
         tests: [unique, not_null]
       - name: sla_pct
-        description: "Percentage of shipments meeting SLA."
+        description: "Percentage of shipments meeting SLA target."
       - name: sla_status
-        description: "RAG: GREEN >= 95%, AMBER >= 85%, RED < 85%."
+        description: "RAG status: GREEN >= 95%, AMBER >= 85%, RED < 85%."
         tests: [not_null]
 
   - name: returns
-    description: "Product returns. Cross-domain: order_id → sales.orders (PostgreSQL)."
-    meta:
-      owner: "logistics-team@company.com"
-      domain: "logistics"
-      sensitivity: "Internal"
+    description: "Product return records. Cross-domain: order_id references sales.orders (PostgreSQL)."
     columns:
       - name: return_id
         tests: [unique, not_null]
       - name: order_id
-        description: "Cross-domain FK → sales.orders.order_id."
+        description: "Cross-domain FK referencing sales.orders.order_id."
         tests: [not_null]
       - name: reason
         tests: [not_null]

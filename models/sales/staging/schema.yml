@@ -30,9 +30,8 @@ models:
         tests: [unique, not_null]
       - name: status
         tests:
-          - accepted_values:
-              config:
-                severity: warn
+          - name: accepted_values
+            arguments:
               values: ['pending','confirmed','shipped','delivered','cancelled']
 
   - name: stg_order_lines
@@ -48,9 +47,8 @@ models:
         tests: [unique, not_null]
       - name: status
         tests:
-          - accepted_values:
-              config:
-                severity: warn
+          - name: accepted_values
+            arguments:
               values: ['draft','issued','paid','overdue','cancelled']
 
   - name: stg_payments
@@ -60,9 +58,8 @@ models:
         tests: [unique, not_null]
       - name: method
         tests:
-          - accepted_values:
-              config:
-                severity: warn
+          - name: accepted_values
+            arguments:
               values: ['credit_card','bank_transfer','paypal','cash']
 
   - name: stg_sales_reps

@@ -1,0 +1,346 @@
+event_id,shipment_id,status,location,carrier_note,event_time,created_at
+EVT00001,SHIP0001,picked_up,GEO008,Shipment picked up,2023-01-05,2023-01-05
+EVT00002,SHIP0001,in_transit,GEO008,In transit to destination,2023-01-05,2023-01-05
+EVT00003,SHIP0001,delivered,GEO008,Delivered successfully,2023-01-05,2023-01-05
+EVT00004,SHIP0002,picked_up,GEO001,Shipment picked up,2023-01-08,2023-01-08
+EVT00005,SHIP0002,in_transit,GEO001,In transit to destination,2023-01-08,2023-01-08
+EVT00006,SHIP0002,delivered,GEO001,Delivered successfully,2023-01-08,2023-01-08
+EVT00007,SHIP0003,picked_up,GEO001,Shipment picked up,2023-01-12,2023-01-12
+EVT00008,SHIP0003,in_transit,GEO001,In transit to destination,2023-01-12,2023-01-12
+EVT00009,SHIP0003,delivered,GEO001,Delivered successfully,2023-01-12,2023-01-12
+EVT00010,SHIP0004,picked_up,GEO002,Shipment picked up,2023-01-18,2023-01-18
+EVT00011,SHIP0004,in_transit,GEO002,In transit to destination,2023-01-18,2023-01-18
+EVT00012,SHIP0004,delivered,GEO002,Delivered successfully,2023-01-18,2023-01-18
+EVT00013,SHIP0005,picked_up,GEO004,Shipment picked up,2023-01-22,2023-01-22
+EVT00014,SHIP0005,in_transit,GEO004,In transit to destination,2023-01-22,2023-01-22
+EVT00015,SHIP0005,delivered,GEO004,Delivered successfully,2023-01-22,2023-01-22
+EVT00016,SHIP0006,picked_up,GEO019,Shipment picked up,2023-02-03,2023-02-03
+EVT00017,SHIP0006,in_transit,GEO019,In transit to destination,2023-02-03,2023-02-03
+EVT00018,SHIP0006,delivered,GEO019,Delivered successfully,2023-02-03,2023-02-03
+EVT00019,SHIP0007,picked_up,GEO003,Shipment picked up,2023-02-07,2023-02-07
+EVT00020,SHIP0007,in_transit,GEO003,In transit to destination,2023-02-07,2023-02-07
+EVT00021,SHIP0007,delivered,GEO003,Delivered successfully,2023-02-07,2023-02-07
+EVT00022,SHIP0008,picked_up,GEO012,Shipment picked up,2023-02-14,2023-02-14
+EVT00023,SHIP0008,in_transit,GEO012,In transit to destination,2023-02-14,2023-02-14
+EVT00024,SHIP0008,delivered,GEO012,Delivered successfully,2023-02-14,2023-02-14
+EVT00025,SHIP0009,picked_up,GEO008,Shipment picked up,2023-02-19,2023-02-19
+EVT00026,SHIP0009,in_transit,GEO008,In transit to destination,2023-02-19,2023-02-19
+EVT00027,SHIP0009,delivered,GEO008,Delivered successfully,2023-02-19,2023-02-19
+EVT00028,SHIP0010,picked_up,GEO006,Shipment picked up,2023-02-25,2023-02-25
+EVT00029,SHIP0010,in_transit,GEO006,In transit to destination,2023-02-25,2023-02-25
+EVT00030,SHIP0010,delivered,GEO006,Delivered successfully,2023-02-25,2023-02-25
+EVT00031,SHIP0011,picked_up,GEO001,Shipment picked up,2023-03-02,2023-03-02
+EVT00032,SHIP0011,in_transit,GEO001,In transit to destination,2023-03-02,2023-03-02
+EVT00033,SHIP0011,delivered,GEO001,Delivered successfully,2023-03-02,2023-03-02
+EVT00034,SHIP0012,picked_up,GEO004,Shipment picked up,2023-03-08,2023-03-08
+EVT00035,SHIP0012,in_transit,GEO004,In transit to destination,2023-03-08,2023-03-08
+EVT00036,SHIP0012,delivered,GEO004,Delivered successfully,2023-03-08,2023-03-08
+EVT00037,SHIP0013,picked_up,GEO013,Shipment picked up,2023-03-15,2023-03-15
+EVT00038,SHIP0013,in_transit,GEO013,In transit to destination,2023-03-15,2023-03-15
+EVT00039,SHIP0013,delivered,GEO013,Delivered successfully,2023-03-15,2023-03-15
+EVT00040,SHIP0014,picked_up,GEO014,Shipment picked up,2023-03-21,2023-03-21
+EVT00041,SHIP0014,in_transit,GEO014,In transit to destination,2023-03-21,2023-03-21
+EVT00042,SHIP0014,delivered,GEO014,Delivered successfully,2023-03-21,2023-03-21
+EVT00043,SHIP0015,picked_up,GEO016,Shipment picked up,2023-03-28,2023-03-28
+EVT00044,SHIP0015,in_transit,GEO016,In transit to destination,2023-03-28,2023-03-28
+EVT00045,SHIP0015,delivered,GEO016,Delivered successfully,2023-03-28,2023-03-28
+EVT00046,SHIP0016,picked_up,GEO008,Shipment picked up,2023-04-04,2023-04-04
+EVT00047,SHIP0016,in_transit,GEO008,In transit to destination,2023-04-04,2023-04-04
+EVT00048,SHIP0016,delivered,GEO008,Delivered successfully,2023-04-04,2023-04-04
+EVT00049,SHIP0017,picked_up,GEO001,Shipment picked up,2023-04-10,2023-04-10
+EVT00050,SHIP0017,in_transit,GEO001,In transit to destination,2023-04-10,2023-04-10
+EVT00051,SHIP0017,delivered,GEO001,Delivered successfully,2023-04-10,2023-04-10
+EVT00052,SHIP0018,picked_up,GEO010,Shipment picked up,2023-04-17,2023-04-17
+EVT00053,SHIP0018,in_transit,GEO010,In transit to destination,2023-04-17,2023-04-17
+EVT00054,SHIP0018,delivered,GEO010,Delivered successfully,2023-04-17,2023-04-17
+EVT00055,SHIP0019,picked_up,GEO018,Shipment picked up,2023-04-24,2023-04-24
+EVT00056,SHIP0019,in_transit,GEO018,In transit to destination,2023-04-24,2023-04-24
+EVT00057,SHIP0019,delivered,GEO018,Delivered successfully,2023-04-24,2023-04-24
+EVT00058,SHIP0020,picked_up,GEO002,Shipment picked up,2023-05-02,2023-05-02
+EVT00059,SHIP0020,in_transit,GEO002,In transit to destination,2023-05-02,2023-05-02
+EVT00060,SHIP0020,delivered,GEO002,Delivered successfully,2023-05-02,2023-05-02
+EVT00061,SHIP0021,picked_up,GEO008,Shipment picked up,2023-05-09,2023-05-09
+EVT00062,SHIP0021,in_transit,GEO008,In transit to destination,2023-05-09,2023-05-09
+EVT00063,SHIP0021,delivered,GEO008,Delivered successfully,2023-05-09,2023-05-09
+EVT00064,SHIP0022,picked_up,GEO020,Shipment picked up,2023-05-16,2023-05-16
+EVT00065,SHIP0022,in_transit,GEO020,In transit to destination,2023-05-16,2023-05-16
+EVT00066,SHIP0022,delivered,GEO020,Delivered successfully,2023-05-16,2023-05-16
+EVT00067,SHIP0023,picked_up,GEO020,Shipment picked up,2023-05-23,2023-05-23
+EVT00068,SHIP0023,in_transit,GEO020,In transit to destination,2023-05-23,2023-05-23
+EVT00069,SHIP0023,delivered,GEO020,Delivered successfully,2023-05-23,2023-05-23
+EVT00070,SHIP0024,picked_up,GEO001,Shipment picked up,2023-05-30,2023-05-30
+EVT00071,SHIP0024,in_transit,GEO001,In transit to destination,2023-05-30,2023-05-30
+EVT00072,SHIP0024,delivered,GEO001,Delivered successfully,2023-05-30,2023-05-30
+EVT00073,SHIP0025,picked_up,GEO016,Shipment picked up,2023-06-06,2023-06-06
+EVT00074,SHIP0025,in_transit,GEO016,In transit to destination,2023-06-06,2023-06-06
+EVT00075,SHIP0025,delivered,GEO016,Delivered successfully,2023-06-06,2023-06-06
+EVT00076,SHIP0026,picked_up,GEO004,Shipment picked up,2023-06-13,2023-06-13
+EVT00077,SHIP0026,in_transit,GEO004,In transit to destination,2023-06-13,2023-06-13
+EVT00078,SHIP0026,delivered,GEO004,Delivered successfully,2023-06-13,2023-06-13
+EVT00079,SHIP0027,picked_up,GEO003,Shipment picked up,2023-06-20,2023-06-20
+EVT00080,SHIP0027,in_transit,GEO003,In transit to destination,2023-06-20,2023-06-20
+EVT00081,SHIP0027,delivered,GEO003,Delivered successfully,2023-06-20,2023-06-20
+EVT00082,SHIP0028,picked_up,GEO013,Shipment picked up,2023-06-27,2023-06-27
+EVT00083,SHIP0028,in_transit,GEO013,In transit to destination,2023-06-27,2023-06-27
+EVT00084,SHIP0028,delivered,GEO013,Delivered successfully,2023-06-27,2023-06-27
+EVT00085,SHIP0029,picked_up,GEO009,Shipment picked up,2023-07-04,2023-07-04
+EVT00086,SHIP0029,in_transit,GEO009,In transit to destination,2023-07-04,2023-07-04
+EVT00087,SHIP0029,delivered,GEO009,Delivered successfully,2023-07-04,2023-07-04
+EVT00088,SHIP0030,picked_up,GEO001,Shipment picked up,2023-07-11,2023-07-11
+EVT00089,SHIP0030,in_transit,GEO001,In transit to destination,2023-07-11,2023-07-11
+EVT00090,SHIP0030,delivered,GEO001,Delivered successfully,2023-07-11,2023-07-11
+EVT00091,SHIP0031,picked_up,GEO002,Shipment picked up,2023-07-18,2023-07-18
+EVT00092,SHIP0031,in_transit,GEO002,In transit to destination,2023-07-18,2023-07-18
+EVT00093,SHIP0031,delivered,GEO002,Delivered successfully,2023-07-18,2023-07-18
+EVT00094,SHIP0032,picked_up,GEO015,Shipment picked up,2023-07-25,2023-07-25
+EVT00095,SHIP0032,in_transit,GEO015,In transit to destination,2023-07-25,2023-07-25
+EVT00096,SHIP0032,delivered,GEO015,Delivered successfully,2023-07-25,2023-07-25
+EVT00097,SHIP0033,picked_up,GEO004,Shipment picked up,2023-08-01,2023-08-01
+EVT00098,SHIP0033,in_transit,GEO004,In transit to destination,2023-08-01,2023-08-01
+EVT00099,SHIP0033,delivered,GEO004,Delivered successfully,2023-08-01,2023-08-01
+EVT00100,SHIP0034,picked_up,GEO003,Shipment picked up,2023-08-08,2023-08-08
+EVT00101,SHIP0034,in_transit,GEO003,In transit to destination,2023-08-08,2023-08-08
+EVT00102,SHIP0034,delivered,GEO003,Delivered successfully,2023-08-08,2023-08-08
+EVT00103,SHIP0035,picked_up,GEO012,Shipment picked up,2023-08-15,2023-08-15
+EVT00104,SHIP0035,in_transit,GEO012,In transit to destination,2023-08-15,2023-08-15
+EVT00105,SHIP0035,delivered,GEO012,Delivered successfully,2023-08-15,2023-08-15
+EVT00106,SHIP0036,picked_up,GEO010,Shipment picked up,2023-08-22,2023-08-22
+EVT00107,SHIP0036,in_transit,GEO010,In transit to destination,2023-08-22,2023-08-22
+EVT00108,SHIP0036,delivered,GEO010,Delivered successfully,2023-08-22,2023-08-22
+EVT00109,SHIP0037,picked_up,GEO020,Shipment picked up,2023-08-29,2023-08-29
+EVT00110,SHIP0037,in_transit,GEO020,In transit to destination,2023-08-29,2023-08-29
+EVT00111,SHIP0037,delivered,GEO020,Delivered successfully,2023-08-29,2023-08-29
+EVT00112,SHIP0038,picked_up,GEO009,Shipment picked up,2023-09-05,2023-09-05
+EVT00113,SHIP0038,in_transit,GEO009,In transit to destination,2023-09-05,2023-09-05
+EVT00114,SHIP0038,delivered,GEO009,Delivered successfully,2023-09-05,2023-09-05
+EVT00115,SHIP0039,picked_up,GEO001,Shipment picked up,2023-09-12,2023-09-12
+EVT00116,SHIP0039,in_transit,GEO001,In transit to destination,2023-09-12,2023-09-12
+EVT00117,SHIP0039,delivered,GEO001,Delivered successfully,2023-09-12,2023-09-12
+EVT00118,SHIP0040,picked_up,GEO001,Shipment picked up,2023-09-19,2023-09-19
+EVT00119,SHIP0040,in_transit,GEO001,In transit to destination,2023-09-19,2023-09-19
+EVT00120,SHIP0040,delivered,GEO001,Delivered successfully,2023-09-19,2023-09-19
+EVT00121,SHIP0041,picked_up,GEO006,Shipment picked up,2023-09-26,2023-09-26
+EVT00122,SHIP0041,in_transit,GEO006,In transit to destination,2023-09-26,2023-09-26
+EVT00123,SHIP0041,delivered,GEO006,Delivered successfully,2023-09-26,2023-09-26
+EVT00124,SHIP0042,picked_up,GEO013,Shipment picked up,2023-10-03,2023-10-03
+EVT00125,SHIP0042,in_transit,GEO013,In transit to destination,2023-10-03,2023-10-03
+EVT00126,SHIP0042,delivered,GEO013,Delivered successfully,2023-10-03,2023-10-03
+EVT00127,SHIP0043,picked_up,GEO016,Shipment picked up,2023-10-10,2023-10-10
+EVT00128,SHIP0043,in_transit,GEO016,In transit to destination,2023-10-10,2023-10-10
+EVT00129,SHIP0043,delivered,GEO016,Delivered successfully,2023-10-10,2023-10-10
+EVT00130,SHIP0044,picked_up,GEO001,Shipment picked up,2023-10-17,2023-10-17
+EVT00131,SHIP0044,in_transit,GEO001,In transit to destination,2023-10-17,2023-10-17
+EVT00132,SHIP0044,delivered,GEO001,Delivered successfully,2023-10-17,2023-10-17
+EVT00133,SHIP0045,picked_up,GEO010,Shipment picked up,2023-10-24,2023-10-24
+EVT00134,SHIP0045,in_transit,GEO010,In transit to destination,2023-10-24,2023-10-24
+EVT00135,SHIP0045,delivered,GEO010,Delivered successfully,2023-10-24,2023-10-24
+EVT00136,SHIP0046,picked_up,GEO002,Shipment picked up,2023-10-31,2023-10-31
+EVT00137,SHIP0046,in_transit,GEO002,In transit to destination,2023-10-31,2023-10-31
+EVT00138,SHIP0046,delivered,GEO002,Delivered successfully,2023-10-31,2023-10-31
+EVT00139,SHIP0047,picked_up,GEO018,Shipment picked up,2023-11-07,2023-11-07
+EVT00140,SHIP0047,in_transit,GEO018,In transit to destination,2023-11-07,2023-11-07
+EVT00141,SHIP0047,delivered,GEO018,Delivered successfully,2023-11-07,2023-11-07
+EVT00142,SHIP0048,picked_up,GEO008,Shipment picked up,2023-11-14,2023-11-14
+EVT00143,SHIP0048,in_transit,GEO008,In transit to destination,2023-11-14,2023-11-14
+EVT00144,SHIP0048,delivered,GEO008,Delivered successfully,2023-11-14,2023-11-14
+EVT00145,SHIP0049,picked_up,GEO015,Shipment picked up,2023-11-21,2023-11-21
+EVT00146,SHIP0049,in_transit,GEO015,In transit to destination,2023-11-21,2023-11-21
+EVT00147,SHIP0049,delivered,GEO015,Delivered successfully,2023-11-21,2023-11-21
+EVT00148,SHIP0050,picked_up,GEO004,Shipment picked up,2023-11-28,2023-11-28
+EVT00149,SHIP0050,in_transit,GEO004,In transit to destination,2023-11-28,2023-11-28
+EVT00150,SHIP0050,delivered,GEO004,Delivered successfully,2023-11-28,2023-11-28
+EVT00151,SHIP0051,picked_up,GEO008,Shipment picked up,2023-12-05,2023-12-05
+EVT00152,SHIP0051,in_transit,GEO008,In transit to destination,2023-12-05,2023-12-05
+EVT00153,SHIP0051,delivered,GEO008,Delivered successfully,2023-12-05,2023-12-05
+EVT00154,SHIP0052,picked_up,GEO012,Shipment picked up,2023-12-12,2023-12-12
+EVT00155,SHIP0052,in_transit,GEO012,In transit to destination,2023-12-12,2023-12-12
+EVT00156,SHIP0052,delivered,GEO012,Delivered successfully,2023-12-12,2023-12-12
+EVT00157,SHIP0053,picked_up,GEO020,Shipment picked up,2023-12-19,2023-12-19
+EVT00158,SHIP0053,in_transit,GEO020,In transit to destination,2023-12-19,2023-12-19
+EVT00159,SHIP0053,delivered,GEO020,Delivered successfully,2023-12-19,2023-12-19
+EVT00160,SHIP0054,picked_up,GEO004,Shipment picked up,2023-12-26,2023-12-26
+EVT00161,SHIP0054,in_transit,GEO004,In transit to destination,2023-12-26,2023-12-26
+EVT00162,SHIP0054,delivered,GEO004,Delivered successfully,2023-12-26,2023-12-26
+EVT00163,SHIP0055,picked_up,GEO002,Shipment picked up,2024-01-03,2024-01-03
+EVT00164,SHIP0055,in_transit,GEO002,In transit to destination,2024-01-03,2024-01-03
+EVT00165,SHIP0055,delivered,GEO002,Delivered successfully,2024-01-03,2024-01-03
+EVT00166,SHIP0056,picked_up,GEO016,Shipment picked up,2024-01-10,2024-01-10
+EVT00167,SHIP0056,in_transit,GEO016,In transit to destination,2024-01-10,2024-01-10
+EVT00168,SHIP0056,delivered,GEO016,Delivered successfully,2024-01-10,2024-01-10
+EVT00169,SHIP0057,picked_up,GEO001,Shipment picked up,2024-01-17,2024-01-17
+EVT00170,SHIP0057,in_transit,GEO001,In transit to destination,2024-01-17,2024-01-17
+EVT00171,SHIP0057,delivered,GEO001,Delivered successfully,2024-01-17,2024-01-17
+EVT00172,SHIP0058,picked_up,GEO015,Shipment picked up,2024-01-24,2024-01-24
+EVT00173,SHIP0058,in_transit,GEO015,In transit to destination,2024-01-24,2024-01-24
+EVT00174,SHIP0058,delivered,GEO015,Delivered successfully,2024-01-24,2024-01-24
+EVT00175,SHIP0059,picked_up,GEO001,Shipment picked up,2024-01-31,2024-01-31
+EVT00176,SHIP0059,in_transit,GEO001,In transit to destination,2024-01-31,2024-01-31
+EVT00177,SHIP0059,delivered,GEO001,Delivered successfully,2024-01-31,2024-01-31
+EVT00178,SHIP0060,picked_up,GEO003,Shipment picked up,2024-02-07,2024-02-07
+EVT00179,SHIP0060,in_transit,GEO003,In transit to destination,2024-02-07,2024-02-07
+EVT00180,SHIP0060,delivered,GEO003,Delivered successfully,2024-02-07,2024-02-07
+EVT00181,SHIP0061,picked_up,GEO016,Shipment picked up,2024-02-14,2024-02-14
+EVT00182,SHIP0061,in_transit,GEO016,In transit to destination,2024-02-14,2024-02-14
+EVT00183,SHIP0061,delivered,GEO016,Delivered successfully,2024-02-14,2024-02-14
+EVT00184,SHIP0062,picked_up,GEO001,Shipment picked up,2024-02-21,2024-02-21
+EVT00185,SHIP0062,in_transit,GEO001,In transit to destination,2024-02-21,2024-02-21
+EVT00186,SHIP0062,delivered,GEO001,Delivered successfully,2024-02-21,2024-02-21
+EVT00187,SHIP0063,picked_up,GEO001,Shipment picked up,2024-02-28,2024-02-28
+EVT00188,SHIP0063,in_transit,GEO001,In transit to destination,2024-02-28,2024-02-28
+EVT00189,SHIP0063,delivered,GEO001,Delivered successfully,2024-02-28,2024-02-28
+EVT00190,SHIP0064,picked_up,GEO013,Shipment picked up,2024-03-06,2024-03-06
+EVT00191,SHIP0064,in_transit,GEO013,In transit to destination,2024-03-06,2024-03-06
+EVT00192,SHIP0064,delivered,GEO013,Delivered successfully,2024-03-06,2024-03-06
+EVT00193,SHIP0065,picked_up,GEO010,Shipment picked up,2024-03-13,2024-03-13
+EVT00194,SHIP0065,in_transit,GEO010,In transit to destination,2024-03-13,2024-03-13
+EVT00195,SHIP0065,delivered,GEO010,Delivered successfully,2024-03-13,2024-03-13
+EVT00196,SHIP0066,picked_up,GEO003,Shipment picked up,2024-03-20,2024-03-20
+EVT00197,SHIP0066,in_transit,GEO003,In transit to destination,2024-03-20,2024-03-20
+EVT00198,SHIP0066,delivered,GEO003,Delivered successfully,2024-03-20,2024-03-20
+EVT00199,SHIP0067,picked_up,GEO009,Shipment picked up,2024-03-27,2024-03-27
+EVT00200,SHIP0067,in_transit,GEO009,In transit to destination,2024-03-27,2024-03-27
+EVT00201,SHIP0067,delivered,GEO009,Delivered successfully,2024-03-27,2024-03-27
+EVT00202,SHIP0068,picked_up,GEO002,Shipment picked up,2024-04-03,2024-04-03
+EVT00203,SHIP0068,in_transit,GEO002,In transit to destination,2024-04-03,2024-04-03
+EVT00204,SHIP0068,delivered,GEO002,Delivered successfully,2024-04-03,2024-04-03
+EVT00205,SHIP0069,picked_up,GEO020,Shipment picked up,2024-04-10,2024-04-10
+EVT00206,SHIP0069,in_transit,GEO020,In transit to destination,2024-04-10,2024-04-10
+EVT00207,SHIP0069,delivered,GEO020,Delivered successfully,2024-04-10,2024-04-10
+EVT00208,SHIP0070,picked_up,GEO004,Shipment picked up,2024-04-17,2024-04-17
+EVT00209,SHIP0070,in_transit,GEO004,In transit to destination,2024-04-17,2024-04-17
+EVT00210,SHIP0070,delivered,GEO004,Delivered successfully,2024-04-17,2024-04-17
+EVT00211,SHIP0071,picked_up,GEO009,Shipment picked up,2024-04-24,2024-04-24
+EVT00212,SHIP0071,in_transit,GEO009,In transit to destination,2024-04-24,2024-04-24
+EVT00213,SHIP0071,delivered,GEO009,Delivered successfully,2024-04-24,2024-04-24
+EVT00214,SHIP0072,picked_up,GEO015,Shipment picked up,2024-05-01,2024-05-01
+EVT00215,SHIP0072,in_transit,GEO015,In transit to destination,2024-05-01,2024-05-01
+EVT00216,SHIP0072,delivered,GEO015,Delivered successfully,2024-05-01,2024-05-01
+EVT00217,SHIP0073,picked_up,GEO004,Shipment picked up,2024-05-08,2024-05-08
+EVT00218,SHIP0073,in_transit,GEO004,In transit to destination,2024-05-08,2024-05-08
+EVT00219,SHIP0073,delivered,GEO004,Delivered successfully,2024-05-08,2024-05-08
+EVT00220,SHIP0074,picked_up,GEO008,Shipment picked up,2024-05-15,2024-05-15
+EVT00221,SHIP0074,in_transit,GEO008,In transit to destination,2024-05-15,2024-05-15
+EVT00222,SHIP0074,delivered,GEO008,Delivered successfully,2024-05-15,2024-05-15
+EVT00223,SHIP0075,picked_up,GEO012,Shipment picked up,2024-05-22,2024-05-22
+EVT00224,SHIP0075,in_transit,GEO012,In transit to destination,2024-05-22,2024-05-22
+EVT00225,SHIP0075,delivered,GEO012,Delivered successfully,2024-05-22,2024-05-22
+EVT00226,SHIP0076,picked_up,GEO001,Shipment picked up,2024-05-29,2024-05-29
+EVT00227,SHIP0076,in_transit,GEO001,In transit to destination,2024-05-29,2024-05-29
+EVT00228,SHIP0076,delivered,GEO001,Delivered successfully,2024-05-29,2024-05-29
+EVT00229,SHIP0077,picked_up,GEO006,Shipment picked up,2024-06-05,2024-06-05
+EVT00230,SHIP0077,in_transit,GEO006,In transit to destination,2024-06-05,2024-06-05
+EVT00231,SHIP0077,delivered,GEO006,Delivered successfully,2024-06-05,2024-06-05
+EVT00232,SHIP0078,picked_up,GEO013,Shipment picked up,2024-06-12,2024-06-12
+EVT00233,SHIP0078,in_transit,GEO013,In transit to destination,2024-06-12,2024-06-12
+EVT00234,SHIP0078,delivered,GEO013,Delivered successfully,2024-06-12,2024-06-12
+EVT00235,SHIP0079,picked_up,GEO002,Shipment picked up,2024-06-19,2024-06-19
+EVT00236,SHIP0079,in_transit,GEO002,In transit to destination,2024-06-19,2024-06-19
+EVT00237,SHIP0079,delivered,GEO002,Delivered successfully,2024-06-19,2024-06-19
+EVT00238,SHIP0080,picked_up,GEO001,Shipment picked up,2024-06-26,2024-06-26
+EVT00239,SHIP0080,in_transit,GEO001,In transit to destination,2024-06-26,2024-06-26
+EVT00240,SHIP0080,delivered,GEO001,Delivered successfully,2024-06-26,2024-06-26
+EVT00241,SHIP0081,picked_up,GEO016,Shipment picked up,2024-07-03,2024-07-03
+EVT00242,SHIP0081,in_transit,GEO016,In transit to destination,2024-07-03,2024-07-03
+EVT00243,SHIP0081,delivered,GEO016,Delivered successfully,2024-07-03,2024-07-03
+EVT00244,SHIP0082,picked_up,GEO020,Shipment picked up,2024-07-10,2024-07-10
+EVT00245,SHIP0082,in_transit,GEO020,In transit to destination,2024-07-10,2024-07-10
+EVT00246,SHIP0082,delivered,GEO020,Delivered successfully,2024-07-10,2024-07-10
+EVT00247,SHIP0083,picked_up,GEO020,Shipment picked up,2024-07-17,2024-07-17
+EVT00248,SHIP0083,in_transit,GEO020,In transit to destination,2024-07-17,2024-07-17
+EVT00249,SHIP0083,delivered,GEO020,Delivered successfully,2024-07-17,2024-07-17
+EVT00250,SHIP0084,picked_up,GEO003,Shipment picked up,2024-07-24,2024-07-24
+EVT00251,SHIP0084,in_transit,GEO003,In transit to destination,2024-07-24,2024-07-24
+EVT00252,SHIP0084,delivered,GEO003,Delivered successfully,2024-07-24,2024-07-24
+EVT00253,SHIP0085,picked_up,GEO009,Shipment picked up,2024-07-31,2024-07-31
+EVT00254,SHIP0085,in_transit,GEO009,In transit to destination,2024-07-31,2024-07-31
+EVT00255,SHIP0085,delivered,GEO009,Delivered successfully,2024-07-31,2024-07-31
+EVT00256,SHIP0086,picked_up,GEO015,Shipment picked up,2024-08-07,2024-08-07
+EVT00257,SHIP0086,in_transit,GEO015,In transit to destination,2024-08-07,2024-08-07
+EVT00258,SHIP0086,delivered,GEO015,Delivered successfully,2024-08-07,2024-08-07
+EVT00259,SHIP0087,picked_up,GEO003,Shipment picked up,2024-08-14,2024-08-14
+EVT00260,SHIP0087,in_transit,GEO003,In transit to destination,2024-08-14,2024-08-14
+EVT00261,SHIP0087,delivered,GEO003,Delivered successfully,2024-08-14,2024-08-14
+EVT00262,SHIP0088,picked_up,GEO001,Shipment picked up,2024-08-21,2024-08-21
+EVT00263,SHIP0088,in_transit,GEO001,In transit to destination,2024-08-21,2024-08-21
+EVT00264,SHIP0088,delivered,GEO001,Delivered successfully,2024-08-21,2024-08-21
+EVT00265,SHIP0089,picked_up,GEO010,Shipment picked up,2024-08-28,2024-08-28
+EVT00266,SHIP0089,in_transit,GEO010,In transit to destination,2024-08-28,2024-08-28
+EVT00267,SHIP0089,delivered,GEO010,Delivered successfully,2024-08-28,2024-08-28
+EVT00268,SHIP0090,picked_up,GEO004,Shipment picked up,2024-09-04,2024-09-04
+EVT00269,SHIP0090,in_transit,GEO004,In transit to destination,2024-09-04,2024-09-04
+EVT00270,SHIP0090,delivered,GEO004,Delivered successfully,2024-09-04,2024-09-04
+EVT00271,SHIP0091,picked_up,GEO001,Shipment picked up,2024-09-11,2024-09-11
+EVT00272,SHIP0091,in_transit,GEO001,In transit to destination,2024-09-11,2024-09-11
+EVT00273,SHIP0091,delivered,GEO001,Delivered successfully,2024-09-11,2024-09-11
+EVT00274,SHIP0092,picked_up,GEO013,Shipment picked up,2024-09-18,2024-09-18
+EVT00275,SHIP0092,in_transit,GEO013,In transit to destination,2024-09-18,2024-09-18
+EVT00276,SHIP0092,delivered,GEO013,Delivered successfully,2024-09-18,2024-09-18
+EVT00277,SHIP0093,picked_up,GEO004,Shipment picked up,2024-09-25,2024-09-25
+EVT00278,SHIP0093,in_transit,GEO004,In transit to destination,2024-09-25,2024-09-25
+EVT00279,SHIP0093,delivered,GEO004,Delivered successfully,2024-09-25,2024-09-25
+EVT00280,SHIP0094,picked_up,GEO008,Shipment picked up,2024-10-02,2024-10-02
+EVT00281,SHIP0094,in_transit,GEO008,In transit to destination,2024-10-02,2024-10-02
+EVT00282,SHIP0094,delivered,GEO008,Delivered successfully,2024-10-02,2024-10-02
+EVT00283,SHIP0095,picked_up,GEO012,Shipment picked up,2024-10-09,2024-10-09
+EVT00284,SHIP0095,in_transit,GEO012,In transit to destination,2024-10-09,2024-10-09
+EVT00285,SHIP0095,delivered,GEO012,Delivered successfully,2024-10-09,2024-10-09
+EVT00286,SHIP0096,picked_up,GEO015,Shipment picked up,2024-10-16,2024-10-16
+EVT00287,SHIP0096,in_transit,GEO015,In transit to destination,2024-10-16,2024-10-16
+EVT00288,SHIP0096,delivered,GEO015,Delivered successfully,2024-10-16,2024-10-16
+EVT00289,SHIP0097,picked_up,GEO001,Shipment picked up,2024-10-23,2024-10-23
+EVT00290,SHIP0097,in_transit,GEO001,In transit to destination,2024-10-23,2024-10-23
+EVT00291,SHIP0097,delivered,GEO001,Delivered successfully,2024-10-23,2024-10-23
+EVT00292,SHIP0098,picked_up,GEO020,Shipment picked up,2024-10-30,2024-10-30
+EVT00293,SHIP0098,in_transit,GEO020,In transit to destination,2024-10-30,2024-10-30
+EVT00294,SHIP0098,delivered,GEO020,Delivered successfully,2024-10-30,2024-10-30
+EVT00295,SHIP0099,picked_up,GEO016,Shipment picked up,2024-11-06,2024-11-06
+EVT00296,SHIP0099,in_transit,GEO016,In transit to destination,2024-11-06,2024-11-06
+EVT00297,SHIP0099,delivered,GEO016,Delivered successfully,2024-11-06,2024-11-06
+EVT00298,SHIP0100,picked_up,GEO002,Shipment picked up,2024-11-13,2024-11-13
+EVT00299,SHIP0100,in_transit,GEO002,In transit to destination,2024-11-13,2024-11-13
+EVT00300,SHIP0100,delivered,GEO002,Delivered successfully,2024-11-13,2024-11-13
+EVT00301,SHIP0101,picked_up,GEO001,Shipment picked up,2024-11-20,2024-11-20
+EVT00302,SHIP0101,in_transit,GEO001,In transit to destination,2024-11-20,2024-11-20
+EVT00303,SHIP0101,delivered,GEO001,Delivered successfully,2024-11-20,2024-11-20
+EVT00304,SHIP0102,picked_up,GEO016,Shipment picked up,2024-11-27,2024-11-27
+EVT00305,SHIP0102,in_transit,GEO016,In transit to destination,2024-11-27,2024-11-27
+EVT00306,SHIP0102,delivered,GEO016,Delivered successfully,2024-11-27,2024-11-27
+EVT00307,SHIP0103,picked_up,GEO006,Shipment picked up,2024-12-04,2024-12-04
+EVT00308,SHIP0103,in_transit,GEO006,In transit to destination,2024-12-04,2024-12-04
+EVT00309,SHIP0103,delivered,GEO006,Delivered successfully,2024-12-04,2024-12-04
+EVT00310,SHIP0104,picked_up,GEO013,Shipment picked up,2024-12-11,2024-12-11
+EVT00311,SHIP0104,in_transit,GEO013,In transit to destination,2024-12-11,2024-12-11
+EVT00312,SHIP0104,delivered,GEO013,Delivered successfully,2024-12-11,2024-12-11
+EVT00313,SHIP0105,picked_up,GEO003,Shipment picked up,2024-12-18,2024-12-18
+EVT00314,SHIP0105,in_transit,GEO003,In transit to destination,2024-12-18,2024-12-18
+EVT00315,SHIP0105,delivered,GEO003,Delivered successfully,2024-12-18,2024-12-18
+EVT00316,SHIP0106,picked_up,GEO009,Shipment picked up,2025-01-08,2025-01-08
+EVT00317,SHIP0106,in_transit,GEO009,In transit to destination,2025-01-08,2025-01-08
+EVT00318,SHIP0106,delivered,GEO009,Delivered successfully,2025-01-08,2025-01-08
+EVT00319,SHIP0107,picked_up,GEO001,Shipment picked up,2025-01-15,2025-01-15
+EVT00320,SHIP0107,in_transit,GEO001,In transit to destination,2025-01-15,2025-01-15
+EVT00321,SHIP0107,delivered,GEO001,Delivered successfully,2025-01-15,2025-01-15
+EVT00322,SHIP0108,picked_up,GEO010,Shipment picked up,2025-01-22,2025-01-22
+EVT00323,SHIP0108,in_transit,GEO010,In transit to destination,2025-01-22,2025-01-22
+EVT00324,SHIP0108,delivered,GEO010,Delivered successfully,2025-01-22,2025-01-22
+EVT00325,SHIP0109,picked_up,GEO004,Shipment picked up,2025-01-29,2025-01-29
+EVT00326,SHIP0109,in_transit,GEO004,In transit to destination,2025-01-29,2025-01-29
+EVT00327,SHIP0109,delivered,GEO004,Delivered successfully,2025-01-29,2025-01-29
+EVT00328,SHIP0110,picked_up,GEO013,Shipment picked up,2025-02-05,2025-02-05
+EVT00329,SHIP0110,in_transit,GEO013,In transit to destination,2025-02-05,2025-02-05
+EVT00330,SHIP0110,delivered,GEO013,Delivered successfully,2025-02-05,2025-02-05
+EVT00331,SHIP0111,picked_up,GEO009,Shipment picked up,2025-02-12,2025-02-12
+EVT00332,SHIP0111,in_transit,GEO009,In transit to destination,2025-02-12,2025-02-12
+EVT00333,SHIP0111,delivered,GEO009,Delivered successfully,2025-02-12,2025-02-12
+EVT00334,SHIP0112,picked_up,GEO001,Shipment picked up,2025-02-19,2025-02-19
+EVT00335,SHIP0112,in_transit,GEO001,In transit to destination,2025-02-19,2025-02-19
+EVT00336,SHIP0112,delivered,GEO001,Delivered successfully,2025-02-19,2025-02-19
+EVT00337,SHIP0113,picked_up,GEO008,Shipment picked up,2025-02-26,2025-02-26
+EVT00338,SHIP0113,in_transit,GEO008,In transit to destination,2025-02-26,2025-02-26
+EVT00339,SHIP0113,delivered,GEO008,Delivered successfully,2025-02-26,2025-02-26
+EVT00340,SHIP0114,picked_up,GEO020,Shipment picked up,2025-03-05,2025-03-05
+EVT00341,SHIP0114,in_transit,GEO020,In transit to destination,2025-03-05,2025-03-05
+EVT00342,SHIP0114,delivered,GEO020,Delivered successfully,2025-03-05,2025-03-05
+EVT00343,SHIP0115,picked_up,GEO015,Shipment picked up,2025-03-12,2025-03-12
+EVT00344,SHIP0115,in_transit,GEO015,In transit to destination,2025-03-12,2025-03-12
+EVT00345,SHIP0115,delivered,GEO015,Delivered successfully,2025-03-12,2025-03-12

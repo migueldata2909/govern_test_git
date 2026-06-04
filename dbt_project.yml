@@ -36,10 +36,6 @@ models:
       columns: true
 
     # EXISTING — unchanged
-    staging:
-      +materialized: view
-      +schema: staging
-
     marts:
       +materialized: table
 
@@ -51,30 +47,26 @@ models:
 
     # NEW — Sales domain
     sales:
-      +schema: sales
       +tags: ["sales"]
-
       staging:
         +materialized: view
         +schema: sales_staging
         +tags: ["staging"]
-
       marts:
         +materialized: table
         +schema: sales
         +tags: ["sales", "mart"]
 
-    # NEW — Logistics domain (Snowflake — add later)
+    # NEW — Logistics domain (Snowflake)
     logistics:
-      +schema: logistics
+      +database: LOGISTICS_DB
+      +schema: LOGISTICS
       +tags: ["logistics"]
-
       staging:
         +materialized: view
-        +schema: logistics_staging
+        +schema: LOGISTICS_STAGING
         +tags: ["staging"]
-
       marts:
         +materialized: table
-        +schema: logistics
+        +schema: LOGISTICS
         +tags: ["logistics", "mart"]

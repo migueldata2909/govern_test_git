@@ -1,0 +1,132 @@
+version: 2
+
+models:
+  - name: warehouses
+    description: "Warehouse locations. geo_id cross-references shared.geography (PostgreSQL)."
+    meta:
+      owner: "logistics-team@company.com"
+      domain: "logistics"
+      sensitivity: "Internal"
+    columns:
+      - name: warehouse_id
+        tests: [unique, not_null]
+      - name: type
+        tests:
+          - accepted_values:
+              config:
+                severity: warn
+              values: ['fulfillment','distribution','returns']
+
+  - name: suppliers
+    description: "Supplier master data. Internal."
+    meta:
+      owner: "logistics-team@company.com"
+      domain: "logistics"
+      sensitivity: "Internal"
+    columns:
+      - name: supplier_id
+        tests: [unique, not_null]
+
+  - name: inventory
+    description: "Stock levels by warehouse and product. product_id cross-references shared.products."
+    meta:
+      owner: "logistics-team@company.com"
+      domain: "logistics"
+      sensitivity: "Internal"
+      tier: "Tier2"
+    columns:
+      - name: inventory_id
+        tests: [unique, not_null]
+      - name: qty_available
+        description: "Calculated: qty_on_hand minus qty_reserved."
+      - name: needs_reorder
+        description: "True when qty_on_hand is at or below reorder_level."
+
+  - name: purchase_orders
+    description: "Procurement orders to suppliers."
+    meta:
+      owner: "logistics-team@company.com"
+      domain: "logistics"
+      sensitivity: "Internal"
+    columns:
+      - name: po_id
+        tests: [unique, not_null]
+      - name: status
+        tests:
+          - accepted_values:
+              config:
+                severity: warn
+              values: ['draft','confirmed','shipped','received','cancelled']
+
+  - name: shipments
+    description: "Shipment records. Cross-domain: order_id → sales.orders, customer_id → shared.customers (both PostgreSQL)."
+    meta:
+      owner: "logistics-team@company.com"
+      domain: "logistics"
+      sensitivity: "Internal"
+    columns:
+      - name: shipment_id
+        tests: [unique, not_null]
+      - name: order_id
+        description: "Cross-domain FK → sales.orders."
+        tests: [not_null]
+      - name: customer_id
+        description: "Quasi-PII: links to shared.customers."
+        meta:
+          sensitivity: "Quasi-PII"
+      - name: status
+        tests:
+          - accepted_values:
+              config:
+                severity: warn
+              values: ['pending','in_transit','delivered','failed','returned']
+
+  - name: shipment_events
+    description: "Tracking event log per shipment."
+    meta:
+      owner: "logistics-team@company.com"
+      domain: "logistics"
+      sensitivity: "Internal"
+    columns:
+      - name: event_id
+        tests: [unique, not_null]
+
+  - name: delivery_sla
+    description: "SLA performance by carrier and region. KPI — no PII. Certified Tier1."
+    meta:
+      owner: "logistics-team@company.com"
+      domain: "logistics"
+      sensitivity: "Public"
+      tags: ["kpi","certified"]
+      tier: "Tier1"
+    columns:
+      - name: sla_id
+        tests: [unique, not_null]
+      - name: sla_pct
+        description: "Percentage of shipments meeting SLA."
+      - name: sla_status
+        description: "RAG: GREEN >= 95%, AMBER >= 85%, RED < 85%."
+        tests:
+          - accepted_values:
+              config:
+                severity: warn
+              values: ['GREEN','AMBER','RED']
+
+  - name: returns
+    description: "Product returns. Cross-domain: order_id → sales.orders (PostgreSQL)."
+    meta:
+      owner: "logistics-team@company.com"
+      domain: "logistics"
+      sensitivity: "Internal"
+    columns:
+      - name: return_id
+        tests: [unique, not_null]
+      - name: order_id
+        description: "Cross-domain FK → sales.orders.order_id."
+        tests: [not_null]
+      - name: reason
+        tests:
+          - accepted_values:
+              config:
+                severity: warn
+              values: ['damaged','wrong_item','not_needed','late_delivery','other']

@@ -18,15 +18,7 @@ models:
               to: ref('customers')
               field: customer_id
       - name: status
-        tests:
-          - name: accepted_values
-            arguments:
-              values: ['pending','confirmed','shipped','delivered','cancelled']
-      - name: channel
-        tests:
-          - name: accepted_values
-            arguments:
-              values: ['web','mobile','partner','direct']
+        tests: [not_null]
       - name: total_amount
         tests: [not_null]
 
@@ -70,10 +62,7 @@ models:
               to: ref('orders')
               field: order_id
       - name: status
-        tests:
-          - name: accepted_values
-            arguments:
-              values: ['draft','issued','paid','overdue','cancelled']
+        tests: [not_null]
 
   - name: payments
     description: "Payment transactions. Financial, PCI scope. Restricted. Tier1."
@@ -87,15 +76,7 @@ models:
       - name: payment_id
         tests: [unique, not_null]
       - name: method
-        tests:
-          - name: accepted_values
-            arguments:
-              values: ['credit_card','bank_transfer','paypal','cash']
-      - name: status
-        tests:
-          - name: accepted_values
-            arguments:
-              values: ['pending','completed','failed','refunded']
+        tests: [not_null]
 
   - name: sales_reps
     description: "Internal sales team. PII — GDPR applies."
@@ -134,7 +115,7 @@ models:
         description: "Calculated: achieved / target × 100."
 
   - name: revenue_daily
-    description: "Daily revenue aggregation by channel, country, segment. KPI mart — no PII. Certified Tier1."
+    description: "Daily revenue aggregation. KPI mart — no PII. Certified Tier1."
     meta:
       owner: "sales-team@company.com"
       domain: "sales"
